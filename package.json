@@ -1,0 +1,33 @@
+{
+  "name": "cxk",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "A font iKun",
+  "license": "ISC",
+  "description": "for",
+  "devDependencies": {
+    "browserify": "^17.0.0",
+    "del": "^6.0.0",
+    "electron": "^7.3.3",
+    "electron-builder": "^24.13.3",
+    "webpack": "^5.93.0"
+  },
+  "dependencies": {
+    "12": "^1.0.2",
+    "builder": "^5.0.0",
+    
+    "element": "^0.1.4",
+    "element-plus": "^2.7.8",
+    "node": "^22.5.1",
+    "node-gyp": "^10.2.0",
+    "npm": "^10.8.2",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7"
+  }
+}

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+  <div>
+    
+  </div>
+  <div>
+    <h2 class="titlebar" ><img src="./logo.png"></h2>
+    <div id="text-container">
+      <img id="text-bird" src="./鸟巢.png">
+      <span id="text-content"></span>    
+    </div>
+
+
+      <el-row>
+      <el-button id="zxh" class="zuixiaohua">–</el-button>
+      <el-button id="tc" class="tuichu" > × </el-button>      
+      
+      
+      </el-row>
+      
+      <h3>
+        
+       
+        
+      </h3>
+    
+    
+  </div>
+  <div>
+    <el-row>
+      
+      <el-button id="aaa" class="x" >添加音乐</el-button>
+     
+      <el-button id="fff" class="ff">打开</el-button>
+       
+
+  </el-row>
+  </div>
+    <div id="musicList"></div>
+  
+    <div id="tracksList" class="mt-4">
+
+
+    </div>
+  
+<script src="./render.js">
+
+</script>
+</body>
+</html>
+
+<style>
+.x, .ff{
+  position: relative;
+  overflow: hidden;
+  cursor:default;
+}
+.x:hover::after, .ff:hover::after{
+  content:'';
+  position: absolute;
+  top: -5px;
+  right:-5px;
+  left:-5px;
+  bottom:-5px;
+  border:5px solid rgba(0,0,0,0.5);
+  pointer-events: none;
+  cursor: default;
+}
+body{
+  background-image: url('./mainb.png');
+  background-size: 900px 760px;
+  
+  
+  
+}
+#text-bird{
+  
+  position: absolute;
+  display: inline-block;
+  height: 45px;
+  width: 90px;
+  left:655px;
+  top:166px;
+  
+}
+.zuixiaohua{
+  cursor:pointer;
+  color: #090909;
+  position: absolute;
+  top: 3.5px;
+  right: 67.5px;
+  font-size: 20px;
+}
+
+.tuichu{
+  cursor:pointer;
+  color: #090909;
+  position: absolute;
+  top: 3.5px;
+  right: 25px;
+  font-size: 20px;
+
+}
+#app {
+  text-align: left;
+  margin-top: auto30px;
+}
+
+
+.titlebar img{
+  position: absolute;
+  width: 170px;
+  height: 60px;
+ 
+
+
+
+}  
+.titlebar-button{
+  -webkit-app-region:no-drag;
+
+}
+#aaa{
+  position: absolute;
+  top:80px;
+  left: 270px;
+  font-size: 20px;
+
+}
+#fff{
+  position: absolute;
+  top: 80px;
+  left: 390px;
+  font-size: 20px;
+}
+.list-group-item{
+  position: absolute;
+  right: 20px;
+  top: 705px;
+  font-size: 12px;
+  border: 0;
+  color:bisque;
+}
+.list-group{
+  border: 0;
+}
+
+.fa-step-backward{
+  position: absolute;
+  color: white;
+  z-index: 2;
+  right: 600px;
+  top: 490px;
+  font-size: 35px;
+}
+.fa-step-forward{
+  position: absolute;
+  color: white;
+  z-index: 2;
+  right: 145.5px;
+  top: 454px;
+  font-size: 35px;
+}
+.fa-play-circle{
+  position: absolute;
+  color:white;
+  right:471px;
+  top:419px;
+  font-size: 35px;
+}
+.fa-repeat{
+  position: absolute;
+  color:white;
+  right:471px;
+  top:419px;
+  font-size: 35px;
+}
+#text-content{
+  position: absolute;
+  left:75%;
+  top:18%;
+  
+  opacity: 0;
+  transition: opacity 2s;
+
+}
+</style>
